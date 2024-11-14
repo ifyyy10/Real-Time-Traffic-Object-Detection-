@@ -6,23 +6,29 @@ The goal of this project is to accurately detect traffic objects such as cars, b
 
 ## Features
 Model Training and Evaluation: Train and evaluate the model using Detectron2 with COCO metrics, including mean Average Precision (mAP).
+
 Traffic Object Detection: Identify objects like vehicles,  buses, crosswalk, and traffic signs in real-time.
+
 Gradio Interface: Easy-to-use web interface for uploading and analyzing images.
 
 
 ## Installation
 Clone the repository and install the necessary dependencies.
+
 Note: The project requires Python 3.8+ and Detectron2, which can be installed following the Detectron2 installation guide.
 
 ## Usage
 Model Training: To train the model on a custom traffic dataset, refer to Traffic Object Detection-Main.ipynb. Configure the dataset and model settings, then run the training cells. Ensure you download the trained model and the config. file(faster_rcnn_X_101_32x8d_FPN_3x.yaml) from the detectron2 output directory.
+
 Run the Gradio Interface: Launch the Gradio interface by running the Traffic Object Detection-Gradio Interface.ipynb notebook. Ensure you have the trained model file and config. file stored in your google drive.
 
 ## Model Evaluation
 The model is evaluated using COCO metrics:
 
 mAP: Assesses precision across different IoU thresholds.
+
 AR: Measures recall for detecting various object sizes.
+
 Details on the model evaluation are available in Traffic Object Detection-Main.ipynb.
 
 ## Results
